@@ -12,11 +12,11 @@ int main() {
     cout << p4 << " is palindrome: " << p4.isPalindrome() << endl;
     PString p5("25 ABC 9cba52");
     cout << p5 << " is palindrome: " << p5.isPalindrome() << endl;
-    PString p6("chic");
+    PString p6("Don’t nod");
     cout << p6 << " is palindrome: " << p6.isPalindrome() << endl;
-    PString p7("chic");
+    PString p7("Not even close!");
     cout << p7 << " is palindrome: " << p7.isPalindrome() << endl;
-    PString p8("chic");
+    PString p8("A man, a plan, a canal -- Panama");
     cout << p8 << " is palindrome: " << p8.isPalindrome() << endl;
 
 }

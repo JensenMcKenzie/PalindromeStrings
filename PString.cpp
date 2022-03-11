@@ -13,12 +13,14 @@ PString::PString(string s) {
 
 bool PString::isPalindrome() {
     string s = this->data();
-    remove(s.begin(),s.end(), ' ');
+    s.erase(remove(s.begin(),s.end(),' '),s.end());
     for (int i = 0; i < s.size(); i++){
         s[i] = tolower(s[i]);
         if (!isalnum((int)s[i])){
-            remove(s.begin(),s.end(),s[i]);
+            s.erase(remove(s.begin(),s.end(), s[i]),s.end());
         }
+        s[i] = tolower(s[i]);
+
     }
     string reversed = "";
     for (int i = s.size()-1; i >= 0; i--){
